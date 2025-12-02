@@ -1,0 +1,151 @@
+Functions Assignments
+ 1. Write a function which can return the sum of two numbers. 
+
+function add(a,b){ 
+
+………………… 
+
+} 
+
+var sum = add(45,67); 
+
+console.log(sum); 
+
+2. Write a function which can return the greatest of the three numbers passed in arguments. 
+
+function compare(a,b,c){ 
+
+………………… 
+
+} 
+
+var greatest = compare(45,67,23); 
+
+console.log(greatest); 
+
+3. Write a function which can print the given arguments in ascending order. 
+
+function sortNums(a,b,c){ 
+
+………………… 
+
+} 
+
+var ascending = sortNums(45,7,68); 
+
+console.log(ascending); 
+
+4. Write a function which can return the factorial of a number. 
+
+function fact(a){ 
+
+………………… 
+
+} 
+
+var factorial = fact(4); 
+
+console.log(factorial); 
+
+5. Write a function which can to return the reverse of a given number. 
+
+function rev(a){ 
+
+………………… 
+
+} 
+
+var reverse = rev(4); 
+
+console.log(reverse); 
+
+ 
+
+Level 1: Basic Functions (Beginner) 
+These assignments focus on simple function creation, arithmetic operations,
+and conditionals. 
+
+1. Write a function to find the greatest of three numbers. 
+Write a function to sort three numbers in ascending order. 
+Write a function to return the factorial of a number. 
+Write a function to reverse a given number. 
+Write a function to check if a given number is a palindrome. 
+Write a function to check if a number is prime. 
+Write a function to return the number of digits in a number. 
+Write a function to print all even numbers between 1 and 20. 
+Write a function to calculate the cube of any number. 
+ 
+
+Level 2: Intermediate Functions (Using Loops & Arrays) 
+These assignments introduce loops, array operations, and higher-order
+functions.  
+
+Write a function to find the maximum number in an array. 
+Write a function to find the minimum number in an array. 
+Write a function to find the sum of all numbers in an array using reduce(). 
+Write a function to find the product of all numbers in an array using a loop. 
+Write a function to count the occurrences of a given number in an array. 
+Write a function to remove duplicates from an array. 
+Write a function to check if an array is sorted in ascending order. 
+Write a function to merge two sorted arrays. 
+Write a function to check if a number is an Armstrong number. 
+Write a function to check if a number is a perfect number. 
+ 
+
+Level 3: Advanced Functions (Recursion & Complex Operations) 
+These assignments use recursion, mathematical operations, and multiple
+function calls.  
+
+Write a function to find the power of a number using recursion. 
+Write a function to print all natural numbers up to n using recursion. 
+Write a function to print all even/odd numbers in a given range using recursion. 
+Write a function to find the sum of all numbers up to n using recursion. 
+Write a function to find the sum of all even/odd numbers in a given range using recursion. 
+Write a function to reverse a number using recursion. 
+Write a function to check if a number is a palindrome using recursion. 
+Write a function to find the sum of digits of a number using recursion. 
+Write a function to find the factorial of a number using recursion. 
+Write a function to generate the nth Fibonacci number using recursion. 
+ 
+
+Level 4: Expert Functions (Algorithms & Complex Logic) 
+These assignments involve mathematical logic, recursion, and array
+manipulations.  
+
+Write a function to find the GCD (HCF) of two numbers using recursion. 
+Write a function to find the LCM of two numbers using recursion. 
+Write a function to print all prime numbers between two given numbers. 
+Write a function to print all Armstrong numbers between two numbers. 
+Write a function to print all perfect numbers between two numbers. 
+Write a function to display all array elements using recursion. 
+Write a function to find the sum of elements in an array using recursion. 
+Write a function to find the maximum and minimum elements in an array using recursion. 
+Write a function to count how many times a given character appears in a string. 
+Write a function to reverse a string using recursion. 
+ 
+
+Level 5: Master Level (Using Higher-Order Functions & Objects) 
+These assignments focus on advanced JavaScript concepts like higher-order
+functions, map/filter/reduce, and object
+manipulations.  
+
+Use .reduce() to find the maximum value in an array. 
+Use .reduce() to find the minimum value in an array. 
+Use .reduce() to calculate the total sum of an array. 
+Use .map() to create a new array of squared numbers. 
+Use .filter() to return only even numbers from an array. 
+Use .map() to capitalize the first letter of each word in an array of strings. 
+Create a function that implements all array-based assignments using array methods. 
+Create a function that implements all object-based assignments using object methods. 
+Create a function that implements all string-based assignments using string methods. 
+Implement a function that finds the longest word in a given sentence. 
+ 
+
+Bonus Challenge: Ultimate Problem 
+Write a function that takes a sentence as input and returns an object
+containing: 
+
+The total word count. 
+The longest word. 
+The shortest word. 
+The average word length.  
