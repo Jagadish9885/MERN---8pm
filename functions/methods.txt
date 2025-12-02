@@ -1,0 +1,15 @@
+
+method: if we write function in object is called the method
+a function inside the object is called the method
+
+function vs method
+
+function: individual
+
+
+by default when we create an array / object, by default there will be inbuilt(bind) functions/methods
+
+
+----
+
+.at() supports -1 indexing, from takes from last, it will starts from -1 (not from -0)
