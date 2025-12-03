@@ -1,8 +1,9 @@
-import Navbar from './components/NavBar'
+
 import Banner from './components/Banner'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 import Course from './components/Course'
+import Navbar from './components/NavBar';
 
 function App() {
   
