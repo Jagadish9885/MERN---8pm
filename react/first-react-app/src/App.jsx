@@ -3,7 +3,7 @@ import Banner from './components/Banner'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 import Course from './components/Course'
-import Nav from './components/Nav';
+import Nav from './components/Nav'
 
 
 
