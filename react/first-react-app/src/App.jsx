@@ -3,7 +3,8 @@ import Banner from './components/Banner'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 import Course from './components/Course'
-import Navbar from './components/NavBar';
+
+import NavBar from './components/NavBar';
 
 function App() {
   
@@ -118,7 +119,7 @@ function App() {
   return (
     <>
       <div className='border border-2 border-danger p-2 m-2'>
-       <Navbar></Navbar>
+       <NavBar></NavBar>
        <Banner></Banner>
        <Feedback></Feedback>
        <div className='d-flex flex-wrap'>
