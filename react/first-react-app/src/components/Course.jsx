@@ -9,6 +9,7 @@ function Course(props) {
       <b> Trainer: <i>{props.trainer}</i></b>
       <h3>{props.duration}</h3>
       <p>{props.desc}</p>
+      
     </div>
   )
 }
