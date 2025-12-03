@@ -7,6 +7,7 @@ function Course(props) {
       <h4>{props.children}</h4>
       <b>Price: {props.price}</b>
       <b> Trainer: <i>{props.trainer}</i></b>
+      <h3>New push</h3>
       <h3>{props.duration}</h3>
       <p>{props.desc}</p>
     </div>
