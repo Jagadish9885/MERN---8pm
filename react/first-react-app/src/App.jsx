@@ -123,7 +123,7 @@ function App() {
        <Nav></Nav>
        <Banner></Banner>
        <Feedback></Feedback>
-       <div className='d-flex flex-wrap'>
+       <div className='d-flex flex-wrap justify-content-evenly'>
         {/* <Course price={20000} trainer={"Praveen"} duration={20} >React JS</Course>
        <Course price={20000} trainer={"Meghana"} duration={20} >Angular JS</Course>
        <Course price={20000} trainer={"Sethu Madhav"} duration={20} >JavaScript</Course>
