@@ -1,0 +1,25 @@
+npm create vite@latest my-app
+
+** var(!) only let const, declared and not used  --lint
+
+library files all are in node modules
+
+public folders, to access directly
+
+git ignore-   node modules, list, .env files
+
+eslint-conf
+
+index.html--- actual file, loading on the browser
+
+             <div id="root"></div>
+
+component - is a function   which will return jsx
+
+---------------- app.jsx
+            --- first loading app component
+
+--------- app.css 
+        styles for each component and 
+-------- index.css
+        main css file
