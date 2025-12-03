@@ -1,1 +1,3 @@
 ctrc+c to exit
+
+rfce to get boilerplate for component
