@@ -2,120 +2,266 @@
 import Banner from './components/Banner'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
-import Course from './components/Course'
+
 import Nav from './components/Nav'
+import Products from './components/Products'
 
 
 
 function App() {
   
-  /* const courses = [
+  const productdetails = [
   {
-    courseName: "React Fundamentals",
-    price: 4999,
-    trainer: "Anita Sharma",
-    duration: "4 weeks",
-    description: "Learn the basics of React including components, props, and state management."
+    id: 1,
+    name: "Wireless Headphones",
+    description: "Noise-cancelling over-ear headphones with 30 hours battery life.",
+    price: 99.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.5,
+    inStock: true
   },
   {
-    courseName: "Advanced JavaScript",
-    price: 5999,
-    trainer: "Ravi Kumar",
-    duration: "5 weeks",
-    description: "Deep dive into closures, prototypes, async programming, and ES6+ features."
+    id: 2,
+    name: "Smartphone",
+    description: "6.5-inch display, 128GB storage, dual camera system.",
+    price: 499.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.7,
+    inStock: true
   },
   {
-    courseName: "Full-Stack Web Development",
-    price: 9999,
-    trainer: "Meera Joshi",
-    duration: "8 weeks",
-    description: "Build complete web apps using MERN stack with deployment strategies."
+    id: 3,
+    name: "Running Shoes",
+    description: "Lightweight shoes designed for comfort and performance.",
+    price: 79.99,
+    image: "https://via.placeholder.com/150",
+    category: "Fashion",
+    rating: 4.2,
+    inStock: false
   },
   {
-    courseName: "UI/UX Design Essentials",
-    price: 4499,
-    trainer: "Siddharth Rao",
-    duration: "3 weeks",
-    description: "Master design principles, wireframing, and prototyping using Figma."
+    id: 4,
+    name: "Coffee Maker",
+    description: "Automatic drip coffee maker with programmable timer.",
+    price: 59.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home Appliances",
+    rating: 4.0,
+    inStock: true
   },
   {
-    courseName: "Python for Beginners",
-    price: 3999,
-    trainer: "Priya Desai",
-    duration: "4 weeks",
-    description: "Start coding with Python and explore data types, loops, and functions."
+    id: 5,
+    name: "Gaming Keyboard",
+    description: "Mechanical keyboard with RGB backlight and programmable keys.",
+    price: 89.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.6,
+    inStock: true
   },
   {
-    courseName: "Data Structures & Algorithms",
-    price: 6999,
-    trainer: "Arjun Patel",
-    duration: "6 weeks",
-    description: "Strengthen your problem-solving skills with DSA fundamentals and coding practice."
+    id: 6,
+    name: "Bluetooth Speaker",
+    description: "Portable speaker with deep bass and waterproof design.",
+    price: 49.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.3,
+    inStock: true
   },
   {
-    courseName: "DevOps with AWS",
-    price: 8499,
-    trainer: "Neha Verma",
-    duration: "6 weeks",
-    description: "Learn CI/CD pipelines, Docker, Kubernetes, and AWS deployment."
+    id: 7,
+    name: "Smartwatch",
+    description: "Fitness tracking, heart rate monitor, and notifications.",
+    price: 199.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.4,
+    inStock: true
   },
   {
-    courseName: "Machine Learning Basics",
-    price: 7999,
-    trainer: "Dr. Karan Mehta",
-    duration: "7 weeks",
-    description: "Understand ML algorithms, model training, and evaluation using Python."
+    id: 8,
+    name: "Backpack",
+    description: "Durable backpack with multiple compartments for travel.",
+    price: 39.99,
+    image: "https://via.placeholder.com/150",
+    category: "Fashion",
+    rating: 4.1,
+    inStock: true
   },
   {
-    courseName: "Cybersecurity Foundations",
-    price: 5999,
-    trainer: "Ritika Singh",
-    duration: "5 weeks",
-    description: "Explore network security, encryption, and ethical hacking fundamentals."
+    id: 9,
+    name: "Desk Lamp",
+    description: "LED lamp with adjustable brightness and USB charging port.",
+    price: 29.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home Appliances",
+    rating: 4.0,
+    inStock: true
   },
   {
-    courseName: "Mobile App Development with Flutter",
-    price: 7499,
-    trainer: "Aakash Jain",
-    duration: "6 weeks",
-    description: "Build cross-platform mobile apps using Dart and Flutter framework."
+    id: 10,
+    name: "Electric Kettle",
+    description: "1.5L stainless steel kettle with auto shut-off.",
+    price: 24.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home Appliances",
+    rating: 4.2,
+    inStock: false
   },
   {
-    courseName: "Cloud Computing with Azure",
-    price: 8999,
-    trainer: "Tanvi Agarwal",
-    duration: "6 weeks",
-    description: "Get hands-on with Azure services, virtual machines, and cloud architecture."
+    id: 11,
+    name: "Laptop",
+    description: "15-inch laptop with Intel i5 processor and 8GB RAM.",
+    price: 799.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.6,
+    inStock: true
   },
   {
-    courseName: "SQL & Database Design",
-    price: 4999,
-    trainer: "Manoj Reddy",
-    duration: "4 weeks",
-    description: "Learn relational databases, SQL queries, and normalization techniques."
+    id: 12,
+    name: "Office Chair",
+    description: "Ergonomic chair with lumbar support and adjustable height.",
+    price: 149.99,
+    image: "https://via.placeholder.com/150",
+    category: "Furniture",
+    rating: 4.3,
+    inStock: true
   },
   {
-    courseName: "Git & GitHub Mastery",
-    price: 2999,
-    trainer: "Sneha Kapoor",
-    duration: "2 weeks",
-    description: "Master version control workflows, branching, and collaboration on GitHub."
+    id: 13,
+    name: "Sunglasses",
+    description: "UV-protected stylish sunglasses for men and women.",
+    price: 19.99,
+    image: "https://via.placeholder.com/150",
+    category: "Fashion",
+    rating: 4.1,
+    inStock: true
   },
   {
-    courseName: "Bootstrap 5 & Responsive Design",
-    price: 3499,
-    trainer: "Rahul Nair",
-    duration: "3 weeks",
-    description: "Create responsive websites using Bootstrap 5 utility classes and grid system."
+    id: 14,
+    name: "Microwave Oven",
+    description: "Compact microwave oven with quick heating function.",
+    price: 129.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home Appliances",
+    rating: 4.2,
+    inStock: true
   },
   {
-    courseName: "Next.js for Production",
-    price: 6499,
-    trainer: "Divya Menon",
-    duration: "5 weeks",
-    description: "Build fast, SEO-friendly web apps with server-side rendering and API routes."
+    id: 15,
+    name: "Tablet",
+    description: "10-inch tablet with 64GB storage and Wi-Fi connectivity.",
+    price: 299.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.5,
+    inStock: true
+  },
+  {
+    id: 16,
+    name: "Wireless Mouse",
+    description: "Ergonomic wireless mouse with long battery life.",
+    price: 25.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.3,
+    inStock: true
+  },
+  {
+    id: 17,
+    name: "Water Bottle",
+    description: "Insulated stainless steel bottle keeps drinks cold or hot.",
+    price: 15.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home",
+    rating: 4.0,
+    inStock: true
+  },
+  {
+    id: 18,
+    name: "T-Shirt",
+    description: "Cotton t-shirt available in multiple colors.",
+    price: 12.99,
+    image: "https://via.placeholder.com/150",
+    category: "Fashion",
+    rating: 4.2,
+    inStock: true
+  },
+  {
+    id: 19,
+    name: "Vacuum Cleaner",
+    description: "Bagless vacuum cleaner with powerful suction.",
+    price: 159.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home Appliances",
+    rating: 4.4,
+    inStock: false
+  },
+  {
+    id: 20,
+    name: "Wireless Charger",
+    description: "Fast charging pad compatible with all Qi devices.",
+    price: 29.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.5,
+    inStock: true
+  },
+  {
+    id: 21,
+    name: "Sneakers",
+    description: "Casual sneakers with breathable fabric.",
+    price: 49.99,
+    image: "https://via.placeholder.com/150",
+    category: "Fashion",
+    rating: 4.3,
+    inStock: true
+  },
+  {
+    id: 22,
+    name: "Bookshelf",
+    description: "Wooden bookshelf with 5 tiers for storage.",
+    price: 89.99,
+    image: "https://via.placeholder.com/150",
+    category: "Furniture",
+    rating: 4.2,
+    inStock: true
+  },
+  {
+    id: 23,
+    name: "Camera",
+    description: "DSLR camera with 24MP sensor and Wi-Fi connectivity.",
+    price: 999.99,
+    image: "https://via.placeholder.com/150",
+    category: "Electronics",
+    rating: 4.7,
+    inStock: true
+  },
+  {
+    id: 24,
+    name: "Blender",
+    description: "High-speed blender for smoothies and shakes.",
+    price: 59.99,
+    image: "https://via.placeholder.com/150",
+    category: "Home Appliances",
+    rating: 4.3,
+    inStock: true
+  },
+  {
+    id: 25,
+    name: "Winter Jacket",
+    description: "Warm and stylish jacket for cold weather.",
+    price: 129.99,
+    image: "https://via.placeholder.com/150",
+    category: "Fashion",
+    rating: 4.5,
+    inStock: true
   }
-// ]; */
+];
 
   return (
     <>
@@ -123,23 +269,31 @@ function App() {
        <Nav></Nav>
        <Banner></Banner>
        <Feedback></Feedback>
-       <div className='d-flex flex-wrap justify-content-evenly'>
-        {/* <Course price={20000} trainer={"Praveen"} duration={20} >React JS</Course>
-       <Course price={20000} trainer={"Meghana"} duration={20} >Angular JS</Course>
-       <Course price={20000} trainer={"Sethu Madhav"} duration={20} >JavaScript</Course>
-       <Course price={20000} trainer={"Jagadish"} duration={20} >Node JS</Course>
-       <Course price={20000} trainer={"Ramya"} duration={20} >Express JS</Course>
-       <Course price={20000} trainer={"Praveen"} duration={20} >Mongo DB</Course> */}
-      {/* {
-        courses.map((cs)=>{
-          return <Course price={cs.price} trainer={cs.trainer} duration={cs.duration} desc={cs.description}>{cs.courseName}</Course>
+       {/* <Products>CellPhone</Products>
+       <Products>Washing Machine</Products> */}
+       {
+        productdetails.map((p)=>{
+          return(
+            <Products desc={p.description} rate={p.price}
+             pic={p.image} category={p.category}
+             rating={p.rating}>{p.name}</Products>
+          )
         })
-      }
-        */}
-      </div>
+       }
        </div>
     </>
   )
 }
+
+// id: 1,
+//     name: "Wireless Headphones",
+//     description: "Noise-cancelling over-ear headphones with 30 hours battery life.",
+//     price: 99.99,
+//     image: "https://via.placeholder.com/150",
+//     category: "Electronics",
+//     rating: 4.5,
+//     inStock: true
+
+
 
 export default App
