@@ -9,7 +9,7 @@ import Nav from './components/Nav'
 
 function App() {
   
-  const courses = [
+  /* const courses = [
   {
     courseName: "React Fundamentals",
     price: 4999,
@@ -115,7 +115,7 @@ function App() {
     duration: "5 weeks",
     description: "Build fast, SEO-friendly web apps with server-side rendering and API routes."
   }
-];
+// ]; */
 
   return (
     <>
@@ -130,12 +130,12 @@ function App() {
        <Course price={20000} trainer={"Jagadish"} duration={20} >Node JS</Course>
        <Course price={20000} trainer={"Ramya"} duration={20} >Express JS</Course>
        <Course price={20000} trainer={"Praveen"} duration={20} >Mongo DB</Course> */}
-      {
+      {/* {
         courses.map((cs)=>{
           return <Course price={cs.price} trainer={cs.trainer} duration={cs.duration} desc={cs.description}>{cs.courseName}</Course>
         })
       }
-       
+        */}
       </div>
        </div>
     </>
