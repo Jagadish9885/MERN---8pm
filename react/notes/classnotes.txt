@@ -23,3 +23,13 @@ component - is a function   which will return jsx
         styles for each component and 
 -------- index.css
         main css file
+
+
+--------------------------
+state ui action ---- component
+
+action- will  modify data
+state/ui -       will show what modified
+
+
+----- state variables,
