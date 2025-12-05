@@ -7,7 +7,7 @@ import Nav from './components/Nav'
 import Products from './components/Products'
 
 import WirelessHeadphonesImage from './assets/images_pui/1.jpg'
-import Smartphone from './assets/images_pui/2.jpg'
+import Smartphone from './assets/images_pui/2.webp'
 import GamingKeyboard from './assets/images_pui/5.jpg'
 
 
