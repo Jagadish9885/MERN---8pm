@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 import Products from './components/Products'
 
-import WirelessHeadphonesImage from "./assets/images_pui/1.jpg"
+import WirelessHeadphonesImage from './assets/images_pui/1.jpg'
 
 
 
