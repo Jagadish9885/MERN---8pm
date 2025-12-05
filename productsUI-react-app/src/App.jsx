@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 import Products from './components/Products'
 
+import WirelessHeadphonesImage from "./assets/images_pui/1.jpg"
+
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
     name: "Wireless Headphones",
     description: "Noise-cancelling over-ear headphones with 30 hours battery life.",
     price: 99.99,
-    image: "https://via.placeholder.com/150",
+    image: WirelessHeadphonesImage,
     category: "Electronics",
     rating: 4.5,
     inStock: true

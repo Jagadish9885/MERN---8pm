@@ -14,7 +14,7 @@ function Products(prop) {
         <i>{prop.rating}</i>
       </div>
       <div>
-        <image src={prop.pic}></image>
+        <img src={prop.pic} alt='bomma' style={{width: '200px', height: '200px'}}></img>
       </div>
     </div>
   )
