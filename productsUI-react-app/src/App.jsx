@@ -7,6 +7,9 @@ import Nav from './components/Nav'
 import Products from './components/Products'
 
 import WirelessHeadphonesImage from './assets/images_pui/1.jpg'
+import Smartphone from './assets/images_pui/2.jpg'
+import GamingKeyboard from './assets/images_pui/5.jpg'
+
 
 
 
@@ -28,7 +31,7 @@ function App() {
     name: "Smartphone",
     description: "6.5-inch display, 128GB storage, dual camera system.",
     price: 499.99,
-    image: "https://via.placeholder.com/150",
+    image: "Smartphone",
     category: "Electronics",
     rating: 4.7,
     inStock: true
@@ -58,7 +61,7 @@ function App() {
     name: "Gaming Keyboard",
     description: "Mechanical keyboard with RGB backlight and programmable keys.",
     price: 89.99,
-    image: "https://via.placeholder.com/150",
+    image: GamingKeyboard,
     category: "Electronics",
     rating: 4.6,
     inStock: true
