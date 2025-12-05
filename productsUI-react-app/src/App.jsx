@@ -31,7 +31,7 @@ function App() {
     name: "Smartphone",
     description: "6.5-inch display, 128GB storage, dual camera system.",
     price: 499.99,
-    image: "Smartphone",
+    image: Smartphone,
     category: "Electronics",
     rating: 4.7,
     inStock: true
@@ -51,7 +51,7 @@ function App() {
     name: "Coffee Maker",
     description: "Automatic drip coffee maker with programmable timer.",
     price: 59.99,
-    image: "https://via.placeholder.com/150",
+    image: WirelessHeadphonesImage,
     category: "Home Appliances",
     rating: 4.0,
     inStock: true
