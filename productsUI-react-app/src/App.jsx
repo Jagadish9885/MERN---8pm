@@ -21,7 +21,7 @@ function App() {
     name: "Wireless Headphones",
     description: "Noise-cancelling over-ear headphones with 30 hours battery life.",
     price: 99.99,
-    image: WirelessHeadphonesImage,
+    image: "https://via.placeholder.com/150",
     category: "Electronics",
     rating: 4.5,
     inStock: true
