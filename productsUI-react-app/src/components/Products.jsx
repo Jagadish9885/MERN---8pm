@@ -3,6 +3,7 @@ import React from 'react'
 function Products(prop) {
   return (
     <div>
+      <h1>products</h1>
       <div>
         <h1>{prop.children}</h1>
       </div>
